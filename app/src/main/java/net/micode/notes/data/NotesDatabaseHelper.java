@@ -26,7 +26,11 @@ import net.micode.notes.data.Notes.DataColumns;
 import net.micode.notes.data.Notes.DataConstants;
 import net.micode.notes.data.Notes.NoteColumns;
 
+// 数据库帮助类，用于记录便签相关属性和数据
 
+/**
+ * 用于存储Notes的数据，以及根据数据更改Notes结构体的变量
+ */
 public class NotesDatabaseHelper extends SQLiteOpenHelper {
     private static final String DB_NAME = "note.db";
 

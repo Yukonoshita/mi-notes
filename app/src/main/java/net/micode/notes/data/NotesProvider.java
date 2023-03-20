@@ -34,7 +34,14 @@ import net.micode.notes.data.Notes.DataColumns;
 import net.micode.notes.data.Notes.NoteColumns;
 import net.micode.notes.data.NotesDatabaseHelper.TABLE;
 
+// 便签信息提供类
 
+/**
+ * 便签信息提供类，该类继承于ContentProvider类，由此可见该类主要用于数据的提供的功能，供其他模块实现，相当于对便签信息的管理
+ * 该类定义了相关的UriMathcher用于匹配Uri，使数据管理更加安全，并定义了一些列的方法，对该软件创建的数据库进行管理
+ * 例如,OnCreate, query，insert，update, parseSelection等方法，用于对被选中的数据对象进行相关的删除，插入，更新等操作，实现对数据库的管理，为上层的使用提供了一个较好的接口，对数据库信息进行抽象。
+ *
+ */
 public class NotesProvider extends ContentProvider {
     private static final UriMatcher mMatcher;
 

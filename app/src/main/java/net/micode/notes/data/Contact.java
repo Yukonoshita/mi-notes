@@ -25,6 +25,16 @@ import android.util.Log;
 
 import java.util.HashMap;
 
+
+
+// 联系人数据库
+
+/**
+ * 本模块是联系人数据库，用于存放联系人信息属于net.micode.notes.data包
+ * 该类通过设置一个HashMap来对相关联系人信息进行保存，其中也创建了一个关于联系人保存的规范格式，
+ * 其中实现了一个方法getContact,（）,该方法实现了对联系人的进行保存的管理，并对HashMap没有创建，
+ * 以及已经存在该联系人等特殊情况进行的处理。实现思路上较为清晰
+ */
 public class Contact {
     private static HashMap<String, String> sContactCache;
     private static final String TAG = "Contact";
